@@ -25,13 +25,18 @@ function newGrid(num) {
     
     squares.forEach( (sqr) => {
     sqr.addEventListener('mouseover', () => {
-        sqr.style.backgroundColor = 'black';
-        console.log('fired!')
+        sqr.style.backgroundColor = getRandomRGBA();
     })
 })
 }
 
+function getRandomRGBA() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
 
+    return `rgba(${r}, ${g}, ${b}, 1)`
+}
 
 const newDraw = document.querySelector('#newDrawing');
 newDraw.addEventListener('click', () => {
