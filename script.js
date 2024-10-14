@@ -26,6 +26,7 @@ function newGrid(num) {
     squares.forEach( (sqr) => {
     sqr.addEventListener('mouseover', () => {
         sqr.style.backgroundColor = getRandomRGBA();
+        sqr.style.opacity = sqr.style.opacity + 0.1; 
     })
 })
 }
