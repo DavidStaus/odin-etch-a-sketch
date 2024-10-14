@@ -21,8 +21,8 @@ button {
 
 .container {
     display: flex;
-    height: 960px;
-    width: 960px;
+    height: 800px;
+    width: 800px;
     flex-direction: column;
     border: 5px solid black;
 }
